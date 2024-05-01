@@ -99,7 +99,7 @@ def book_seats(screen):
                                [=======================================================]
                                                           SCREEN
             ''')
-    2
+    
     row = input("Enter row (A to Q): ")
     column = int(input("Enter seat number (1 to 22): "))
 
