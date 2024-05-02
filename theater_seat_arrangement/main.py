@@ -36,41 +36,6 @@ def create_account():
     user_data[username] = {"password": password}
     print("Account created successfully!")
 
-
-# Function to handle screen selection after login
-def select_screen():
-    print("1. Screen1")
-    print("2. Screen2")
-    print("3. Screen3")
-    choice = input("Enter your choice: ")
-
-    if choice == "1":
-        print("Screen1 selected.")
-        book_or_search_seat("Screen1")
-    elif choice == "2":
-        print("Screen2 selected.")
-        book_or_search_seat("Screen2")
-    elif choice == "3":
-        print("Screen3 selected.")
-        book_or_search_seat("Screen3")
-    else:
-        print("Invalid choice. Please try again.")
-
-
-# Function to handle booking or searching seats
-def book_or_search_seat(screen):
-    print("1. Book Seats")
-    print("2. Search Seats")
-    choice = input("Enter your choice: ")
-
-    if choice == "1":
-        book_seats(screen)
-    elif choice == "2":
-        search_seats(screen)
-    else:
-        print("Invalid choice. Please try again.")
-
-
 # Function to book seats
 def book_seats(screen):
     print('''
